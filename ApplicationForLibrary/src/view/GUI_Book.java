@@ -38,10 +38,10 @@ public class GUI_Book extends javax.swing.JPanel {
         jT_Title = new javax.swing.JTextField();
         jL_Cathegory = new javax.swing.JLabel();
         jT_Cathegory = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jB_Add = new javax.swing.JButton();
+        jB_Modify = new javax.swing.JButton();
+        jB_Delete = new javax.swing.JButton();
+        jB_Update = new javax.swing.JButton();
 
         jL_idBook.setText("ID-BOOK");
 
@@ -55,13 +55,13 @@ public class GUI_Book extends javax.swing.JPanel {
 
         jL_Cathegory.setText("CATHEGORY");
 
-        jButton1.setText("jButton1");
+        jB_Add.setText("ADD");
 
-        jButton2.setText("jButton2");
+        jB_Modify.setText("MODIFY");
 
-        jButton3.setText("jButton3");
+        jB_Delete.setText("DELETE");
 
-        jButton4.setText("jButton4");
+        jB_Update.setText("UPDATE");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -99,14 +99,14 @@ public class GUI_Book extends javax.swing.JPanel {
                                     .addComponent(jT_Author)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(110, 110, 110)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton4)
-                                    .addComponent(jButton3))
-                                .addGap(0, 148, Short.MAX_VALUE))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jB_Delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jB_Update, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(0, 150, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))
+                            .addComponent(jB_Add, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jB_Modify, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -132,23 +132,23 @@ public class GUI_Book extends javax.swing.JPanel {
                     .addComponent(jT_Cathegory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3))
+                    .addComponent(jB_Add)
+                    .addComponent(jB_Delete))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4))
+                    .addComponent(jB_Modify)
+                    .addComponent(jB_Update))
                 .addContainerGap(106, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jB_Add;
     private javax.swing.JButton jB_ConsultBook;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jB_Delete;
+    private javax.swing.JButton jB_Modify;
+    private javax.swing.JButton jB_Update;
     private javax.swing.JLabel jL_Author;
     private javax.swing.JLabel jL_Cathegory;
     private javax.swing.JLabel jL_Title;
