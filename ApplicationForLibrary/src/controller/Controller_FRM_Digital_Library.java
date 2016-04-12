@@ -12,27 +12,27 @@ import java.awt.event.ActionEvent;
  * @author JorgeIgnacio
  */
 public class Controller_FRM_Digital_Library implements ActionListener {
-    
+       
     public void actionPerformed(ActionEvent e) {
         
         if(e.getActionCommand().equals("CONSULT")) {
-            
+            //System.out.println("CONSULT");
         }
         
         if(e.getActionCommand().equals("ADD")) {
-            
+            //System.out.println("ADD");
         }
 
         if(e.getActionCommand().equals("MODIFY")) {
-            
+            //System.out.println("MODIFY");
         }
         
         if(e.getActionCommand().equals("DELETE")) {
-            
+            //System.out.println("DELETE");
         }
         
         if(e.getActionCommand().equals("UPDATE")) {
-            
+            //System.out.println("UPDATE");
         }
         
     }

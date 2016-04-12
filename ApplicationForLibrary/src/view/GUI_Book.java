@@ -28,7 +28,19 @@ public class GUI_Book extends javax.swing.JPanel {
         this.jB_Update.addActionListener(controller_FRM_Digital_Library);
     }
     
+    public String[] getInformationBook() {
+        String vectorBook[] = new String[4];
+        vectorBook[0] = this.jT_idBook.getText();
+        vectorBook[1] = this.jT_NameBook.getText();
+        vectorBook[2] = this.jT_Author.getText();
+        vectorBook[3] = this.jT_Title.getText();
+        vectorBook[4] = this.jT_Cathegory.getText();
+        return vectorBook;
+    }
     
+    public String getIdBook() {
+        return this.jT_idBook.getText();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
