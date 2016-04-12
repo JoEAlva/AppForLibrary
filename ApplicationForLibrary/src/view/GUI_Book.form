@@ -31,10 +31,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jT_NameBook" min="-2" pref="100" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                           <Component id="jL_Author" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
@@ -43,7 +43,7 @@
                                           <Component id="jB_ConsultBook" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jT_Title" min="-2" pref="100" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jL_Cathegory" min="-2" max="-2" attributes="0"/>
@@ -51,7 +51,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jT_Cathegory" max="32767" attributes="0"/>
+                                  <Component id="jT_Cathegory" pref="156" max="32767" attributes="0"/>
                                   <Component id="jT_Author" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -61,7 +61,7 @@
                                   <Component id="jB_Delete" max="32767" attributes="0"/>
                                   <Component id="jB_Update" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace min="0" pref="150" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -125,7 +125,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jB_ConsultBook">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Consult"/>
+        <Property name="text" type="java.lang.String" value="CONSULT"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">

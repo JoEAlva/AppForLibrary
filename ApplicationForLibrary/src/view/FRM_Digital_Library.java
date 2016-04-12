@@ -5,18 +5,22 @@
  */
 package view;
 
+import controller.Controller_FRM_Digital_Library;
 /**
  *
  * @author JorgeIgnacio
  */
 public class FRM_Digital_Library extends javax.swing.JFrame {
 
+    Controller_FRM_Digital_Library controller_FRM_Digital_Library;//Reference
     /**
      * Creates new form FRM_Digital_Library
      */
     public FRM_Digital_Library() {
         initComponents();
         setLocation(475, 200);
+        controller_FRM_Digital_Library = new Controller_FRM_Digital_Library();
+        this.gUI_Book1.addController(controller_FRM_Digital_Library);
     }
 
     /**

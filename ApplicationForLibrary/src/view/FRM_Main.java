@@ -114,4 +114,5 @@ public class FRM_Main extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
-}
+
+}//End FRM Main

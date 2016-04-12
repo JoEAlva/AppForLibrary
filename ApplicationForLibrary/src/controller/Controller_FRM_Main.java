@@ -24,7 +24,6 @@ public class Controller_FRM_Main implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         
         if(e.getActionCommand().equals("Digital_library")) {
-            System.err.println(":-/");
             fRM_Digital_Library.setVisible(true);
             
         }

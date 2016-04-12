@@ -4,19 +4,31 @@
  * and open the template in the editor.
  */
 package view;
-
+import controller.Controller_FRM_Digital_Library;
 /**
  *
  * @author JorgeIgnacio
  */
 public class GUI_Book extends javax.swing.JPanel {
 
+    Controller_FRM_Digital_Library controller_FRM_Digital_Library;
     /**
      * Creates new form GUI_Book
      */
     public GUI_Book() {
         initComponents();
     }
+    
+    public void addController(Controller_FRM_Digital_Library controller_FRM_Digital_Library) {
+        this.controller_FRM_Digital_Library=controller_FRM_Digital_Library;
+        this.jB_Add.addActionListener(controller_FRM_Digital_Library);
+        this.jB_ConsultBook.addActionListener(controller_FRM_Digital_Library);
+        this.jB_Delete.addActionListener(controller_FRM_Digital_Library);
+        this.jB_Modify.addActionListener(controller_FRM_Digital_Library);
+        this.jB_Update.addActionListener(controller_FRM_Digital_Library);
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -45,7 +57,7 @@ public class GUI_Book extends javax.swing.JPanel {
 
         jL_idBook.setText("ID-BOOK");
 
-        jB_ConsultBook.setText("Consult");
+        jB_ConsultBook.setText("CONSULT");
 
         jLabel1.setText("NAME");
 
@@ -80,10 +92,10 @@ public class GUI_Book extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                             .addComponent(jT_NameBook, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jL_Author))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jT_idBook, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -95,14 +107,14 @@ public class GUI_Book extends javax.swing.JPanel {
                                         .addComponent(jL_Cathegory)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jT_Cathegory)
+                                    .addComponent(jT_Cathegory, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
                                     .addComponent(jT_Author)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(110, 110, 110)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jB_Delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jB_Update, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(0, 150, Short.MAX_VALUE))))
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jB_Add, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
